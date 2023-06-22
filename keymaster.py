@@ -120,7 +120,7 @@ print("List Created...Please See File Named keys.txt")
 # Konwersja kluczy na adresy Bitcoin i zapisanie ich do pliku
 from bitcoinlib.keys import Key
 
-with open('dec.txt', 'r') as file:
+with open('keys.txt', 'r') as file:
     lines = file.readlines()
 
 keys = []
@@ -151,10 +151,10 @@ print(" ------------------------------------------------------------------------
 print("                                                                                           ")
 print("                                                                                           ")
 filename = 'addr.txt'
-search_terms = input("Wprowadź słowa kluczowe oddzielone spacją: ").split()
-print("                                                                                           ")
-with open(filename, 'r') as f:
-   for line in f:
-       for term in search_terms:
-           if term in line:
-                print(line.strip())
+#search_terms = input("Wprowadź słowa kluczowe oddzielone spacją: ").split()
+#print("                                                                                           ")
+#with open(filename, 'r') as f:
+   #for line in f:
+       #for term in search_terms:
+          # if term in line:
+              #  print(line.strip())
